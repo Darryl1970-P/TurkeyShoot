@@ -1,0 +1,47 @@
+	#frame1 {
+		display: block;
+		width: 90%;
+		height:90%;
+		min-height: 90%;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index:-1;
+		opacity: .5;
+		margin-top: 2%;
+		margin-left: 5%;
+	}
+
+	.ani {
+		position: fixed;
+		top:0;
+		z-index: 9999;
+		opacity: 1;
+		transition: .25s transform linear;
+		z-index: 1;
+		cursor: crosshair;
+		user-select: none;
+	}
+	
+	.ani.isDead {
+		cursor: arrow;
+	}
+	
+	.btnReset {
+		position: fixed;
+		bottom: 1rem;
+		left: 1rem;
+		z-index:2;
+		background: #f00;
+		color: #ff0;
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
+	}
+	
+	.btnReset:hover {
+		background: #900;
+		border-style: inset;
+		cursor: pointer;
+	}
+	
